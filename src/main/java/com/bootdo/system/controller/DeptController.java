@@ -25,6 +25,7 @@ import java.util.Map;
  * @date 2017-09-27 14:40:36
  */
 
+
 @Controller
 @RequestMapping("/system/sysDept")
 public class DeptController extends BaseController {
@@ -45,6 +46,7 @@ public class DeptController extends BaseController {
 	public List<DeptDO> list() {
 		Map<String, Object> query = new HashMap<>(16);
 		List<DeptDO> sysDeptList = sysDeptService.list(query);
+		System.out.println("这是一个测试1111");
 		return sysDeptList;
 	}
 
